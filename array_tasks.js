@@ -16,13 +16,21 @@ var arrayTasks = {
 		return arr;	
 	},
 
-	// square: function (arr) {
-		
-	// },
+	square: function (arr) {
+		var resultingArray = [];
+		arr.forEach(function(element){
+			resultingArray.push(element = element * element);
+		})
+		return resultingArray;
+	},
 
-	// sum: function (arr) {
-		
-	// },
+	sum: function (arr) {
+		var total = 0;
+		arr.forEach(function(element){
+			total += element;
+		})
+		return total;
+	},
 
 	// findDuplicates: function (arr) {
 		
