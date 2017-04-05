@@ -32,9 +32,24 @@ var arrayTasks = {
 		return total;
 	},
 
-	// findDuplicates: function (arr) {
+	findDuplicates: function (arr) {
+		var strippedArray = [];
+		var duplicateArray = [];
+		arr.forEach(function(element){
+			if (strippedArray.includes(element)){
+				if (!duplicateArray.includes(element)){
+					duplicateArray.push(element);	
+				}
+				
+			}
+			else {
+				strippedArray.push(element);
+			}
+		})
+
+		return duplicateArray;
 		
-	// },
+	},
 
 	// removeAndClone: function (arr, valueToRemove) {
 		
