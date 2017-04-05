@@ -40,20 +40,23 @@ var arrayTasks = {
 				if (!duplicateArray.includes(element)){
 					duplicateArray.push(element);	
 				}
-				
 			}
 			else {
 				strippedArray.push(element);
 			}
 		})
-
 		return duplicateArray;
-		
 	},
 
-	// removeAndClone: function (arr, valueToRemove) {
-		
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+		var resultingArray = [];
+		arr.forEach(function(element){
+			if (element != valueToRemove){
+				resultingArray.push(element);
+			}
+		})
+		return resultingArray;		
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 		
